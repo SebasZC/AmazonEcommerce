@@ -1,0 +1,88 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+}
+
+nav {
+    background-color: rgb(60, 60, 60);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 92%;
+    align-items: center;
+}
+
+nav img {
+    width: 100%;
+    padding: 1rem;
+}
+
+nav ul {
+    padding-left: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12.5% 50% 12.5% 12.5% 12.5%;
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0.5rem;
+    color: white;
+}
+
+nav ul li:hover {
+    border: 0.1rem solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+}
+
+nav ul li a b {
+    font-size: 0.95rem;
+}
+
+nav ul li i {
+    padding-top: 1.5rem;
+}
+
+.filtro form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 12% 80% 8%;
+    height: 100%;
+}
+
+
+.filtro select {
+    background-color: rgb(247, 247, 247);
+    border:none;
+    border-radius: 0.2rem 0 0 0.2rem;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.filtro input {
+    border: none;
+    border-left: 0.1rem solid rgb(201, 201, 201);
+}
+
+.filtro input:hover {
+    border: none;
+
+}
+
+.filtro button {
+    background-color: rgb(255, 184, 103);
+    border:none;
+    border-radius: 0 0.2rem 0.2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.filtro:hover {
+    border: none;
+}

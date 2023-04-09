@@ -1,0 +1,37 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.contenido {
+    margin-left: 1rem;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.articulo {
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.articulo img {
+    width: 50%;
+}
+
+.articulo a {
+    text-decoration: none;
+}
+
+.link {
+    color: cornflowerblue;
+}

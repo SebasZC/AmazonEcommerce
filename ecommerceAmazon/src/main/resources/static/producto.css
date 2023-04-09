@@ -1,0 +1,92 @@
+.producto {
+    margin-left: 1rem;
+}
+
+.info-producto {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.info-producto img {
+    width: 100%;
+}
+
+.contenido-producto {
+    width: 100%;
+    text-align: justify;
+    margin-left: 1rem;
+}
+
+.contenido-producto h2 {
+    font-size: 0.7rem;
+    color: rgb(106, 164, 187);
+}
+
+.contenido-producto h1 {
+    font-size: 1.5rem;
+}
+
+.seccion-compra {
+    margin-right: 4rem;
+    border: 0.1rem solid rgb(175, 175, 175);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.seccion-compra select {
+    background-color: rgb(245, 245, 245);
+    border: 0.05rem solid rgb(180, 180, 180);
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.acciones-compra {
+    display: flexbox;
+    text-align: center;
+}
+
+.acciones-compra button {
+    border: none;
+    border-radius: 1rem;
+    width: 70%;
+    margin-top: 1rem;
+    height: 2rem;
+}
+
+.agregar-carrito {
+    background-color: gold;
+}
+
+.comprar-producto {
+    background-color: orange;
+}
+
+
+.seccion-comentarios {
+    margin-left: 2rem;
+    width: 40%;
+}
+
+.seccion-comentarios h1 {
+    font-size: 1.2rem;
+}
+
+.seccion-comentarios hr {
+    color: rgb(116, 116, 116);
+}
+
+.comentario {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.comentario h1 {
+    font-size: 1rem;
+}
+
+.comentario h2 {
+    font-size: 0.8rem;
+}

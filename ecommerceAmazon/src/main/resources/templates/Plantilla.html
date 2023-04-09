@@ -1,0 +1,45 @@
+<html>
+<head th:fragment="head">
+    <title>Amazon ecommerce</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./static/navegador.css" th:href="@{/css/navegador.css}">
+    <link rel="stylesheet" href="./static/catalogo.css" th:href="@{/css/catalogo.css}">
+    <link rel="stylesheet" href="./static/producto.css" th:href="@{/css/producto.css}">
+    <link rel="stylesheet" href="./navegador.css">
+    <link rel="stylesheet" href="./catalogo.css">
+    <link rel="stylesheet" href="./producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../static/css/fontawesome/css/fontawesome.min.css" th:href="@{/css/fontawesome/css/fontawesome.min.css}">
+    <link rel="stylesheet" href="../static/css/fontawesome/css/solid.min.css" th:href="@{/css/fontawesome/css/solid.min.css}">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav th:fragment="nav">
+    <a th:href="@{/catalogo}">
+        <img src="../static/Images/logo.png" th:src="@{/Images/logo.png}">
+    </a>
+    <ul>
+        <li><a href="">
+            Hola <br> <b>Elige tu dirección</b>
+        </a></li>
+        <li class="filtro"><form action="">
+            <select name="" id="">
+                <option value="">Todos</option>
+            </select>
+            <input type="text" name="" id="">
+            <button><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+        </form></li>
+        <li><a href="">
+            Hola {{identifícate}}, <br> <b>Cuentas y Listas</b>
+        </a></li>
+        <li><a href="">
+            Devoluciones <br> <b>y Pedidos</b>
+        </a></li>
+        <li class="filtro">
+            <i class="carrito fa-solid fa-cart-shopping fa-xl"></i> 0
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

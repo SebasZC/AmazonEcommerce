@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="Plantilla :: head">
+</head>
+<body>
+    <nav th:replace="Plantilla :: nav"></nav>
+
+    <div class="contenido">
+        <h1><b>Los más vendidos de Amazon</b></h1>
+
+        <div class="catalogo">
+            <th:block th:each="producto : ${productos}">
+                <div class="articulo">
+                    <img th:src="${producto.getFoto()}">
+                    <br>
+                    <a class="link" th:text="${producto.getNombre()}" th:href="@{/producto?id={id}(id =${producto.getId()})}"></a>
+                    <p th:text='Calificación + ${producto.getCalificacion()}'></p>
+                    <p th:text="COP + ${producto.getPrecio()}"></p>
+                </div>
+            </th:block>
+        </div>
+    </div>
+
+</body>
+</html>

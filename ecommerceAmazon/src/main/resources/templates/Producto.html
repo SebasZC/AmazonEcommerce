@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="Plantilla :: head"></head>
+<body>
+<nav th:replace="Plantilla :: nav"></nav>
+
+<div class="producto">
+    <h1>Amazon Fashion</h1>
+    <div class="info-producto">
+        <img th:src="${producto.getFoto()}">
+        <div class="contenido-producto">
+            <h2>Visita la tienda del proveedor</h2>
+            <h1 th:text="${producto.getNombre()}"></h1>
+            <h3 th:text="${producto.getCalificacion()}"></h3>
+            <p th:text="US + ${producto.getPrecio()}"></p>
+        </div>
+        <div class="seccion-compra">
+            <h2 th:text="US + ${producto.getPrecio()}"></h2>
+            <p>Recibe entrega rápida y GRATIS con Amazon Prime y Devoluciones GRATUITAS
+                Entrega GRATIS el Miércoles, Mayo 11 si compras $25 en artículos enviados por Amazon
+                O Entrega más rápida mañana, Mayo 6. Realiza el pedido en 3 hrs 5 mins</p>
+            <select name="" id="">
+                <option value="1">Cantidad: 1</option>
+                <option value="2">Cantidad: 2</option>
+                <option value="3">Cantidad: 3</option>
+                <option value="4">Cantidad: 4</option>
+                <option value="5">Cantidad: 5</option>
+            </select>
+            <div class="acciones-compra">
+                <button class="agregar-carrito">Agregar al carrito</button>
+                <button class="comprar-producto">Comprar ahora</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="seccion-comentarios">
+    <h1>Sección de comentarios</h1>
+    <hr>
+    <th:block th:each="comentario : ${producto.getComentarios()}">
+        <div class="comentario">
+            <h1 th:text="${comentario.getUsuario()}"></h1>
+            <h2 th:text="${comentario.getCalificacion()}"></h2>
+            <p th:text="${comentario.getContenido()}"></p>
+        </div>
+        <hr>
+    </th:block>
+</div>
+</body>
+</html>
